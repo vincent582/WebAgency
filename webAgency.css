@@ -1,0 +1,597 @@
+/*************************************************
+**************************************************
+*****************   SOMMAIRE   *******************
+	1- $GENERAL CSS
+	2- $LES ANCRES
+	2- $HEADER
+	3- $SLIDER
+	4- $INTRODUCTION (SECTION)
+	5- $SERVICE
+	6- $PROJETS
+	7- $CONTACT
+**************************************************
+*************************************************/
+
+@font-face { 
+    font-family: 'fontawesome-webfont';
+    src: url('webagency_images/fonts/fontawesome-webfont.eot'),
+         url('webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
+         url('webagency_images/fonts/fontawesome-webfont.ttf') format('truetype');
+
+    font-family: 'Roboto';
+    src: url('webagency_images/fonts/Roboto-Black.ttf'),
+         url('webagency_images/fonts/Roboto-BlackItalic.ttf'),
+         url('webagency_images/fonts/Roboto-Bold.ttf'),
+         url('webagency_images/fonts/Roboto-BoldItalic.ttf'),
+         url('webagency_images/fonts/Roboto-Italic.ttf'),
+         url('webagency_images/fonts/Roboto-Light.ttf'),
+         url('webagency_images/fonts/Roboto-LightItalic.ttf'),
+         url('webagency_images/fonts/Roboto-Medium.ttf'),
+         url('webagency_images/fonts/Roboto-MediumItalic.ttf'),
+         url('webagency_images/fonts/Roboto-Regular.ttf'),
+         url('webagency_images/fonts/Roboto-Thin.ttf'),
+         url('webagency_images/fonts/Roboto-ThinItalic.ttf');
+}	
+
+
+
+
+/***********************
+****  $GENERAL CSS *****
+***********************/
+
+body
+{
+	font-family: 'fontawesome-webfont', Arial, serif;
+	margin: 0px;
+}
+strong
+{
+	color: #4D9DC8;
+}
+h1
+{
+	font-family: 'Roboto', 'fontawesome-webfont', Arial, serif;
+	color: white;
+}
+h2
+{
+	font-family: 'Roboto','fontawesome-webfont','Arial';
+	font-size: xx-large;
+	font-weight: bold;
+}
+h3
+{
+	margin: 0px;
+	margin-bottom: 3px;
+}
+h4
+{
+	font-size: small;
+	margin-top: 10px;
+}
+em
+{
+	color: grey;
+	font-weight: bold;
+	font-style: normal;
+}
+a
+{
+	text-decoration: none;
+	color: grey;
+}
+p
+{
+	color: grey;
+}
+
+
+
+/***********************
+****  $LES ANCRES ******
+***********************/
+
+#nosServices:target
+{
+    padding-top: 80px; 
+    margin-top: -80px;
+}
+#projets:target
+{
+    padding-top: 80px; 
+    margin-top: -80px;
+}
+
+
+
+
+/***********************
+******  $HEADER ********
+***********************/
+
+header
+{
+	font-family: 'fontawesome-webfont', Arial, serif;
+	color: grey;
+	background-color: white;
+	position: fixed;
+	top: 0px;
+	z-index: 5;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+#logo
+{
+	padding-top: 15px;
+	height: 50px;
+}
+#menu
+{	
+	margin-top: 0px;
+	list-style: none;
+	display: flex;
+}
+#menu li
+{
+	text-align: center;
+	padding: 30px 9px ;
+	width: 70px;
+}
+
+#menu li:hover
+{
+	border-top: #239DA7 4px solid;
+}
+
+
+
+
+
+/***********************
+******* $SLIDER ********
+***********************/
+
+@keyframes moveleft
+{
+	0% {
+		left: -100%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+@keyframes moveright
+{
+	0% {
+		right: 0%;
+	}
+	100%{
+		right: 100%;
+	}
+}
+
+input[id="next"]:checked ~ figure
+{
+	animation: moveright 1s forwards ;
+}
+
+input[id="prev"]:checked ~ figure
+{
+	animation: moveleft 1s forwards	;
+}
+
+#slider
+{
+	width:100%;	
+	overflow: hidden;
+}
+
+#slider figure 
+{
+	position: relative;
+	width: 200%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 0;
+}
+
+#slider figure img
+{
+	width: 50%;
+	height: 430px;
+	float: left;
+}
+
+#baniere
+{
+	margin-top: 100px;
+	width: 100%;
+}
+
+.infoSlider
+{
+	position: absolute;
+	top: 200px;
+	margin-left: 100px;
+	width: 50%;
+}
+.infoSlider p
+{
+	color: white;
+}
+.infoSlider button
+{
+	font-size: medium;
+	width: 110px;
+	background-color: #4D9DC8;
+	height: 34px;
+	border: solid grey 1px;
+	border-bottom: solid #3782AC 3px; 
+	border-radius:3px;
+	color: white;
+}
+
+label
+{
+	color: white;
+	position: absolute;
+	margin-top: 200px;
+	padding: 14px;
+	z-index: 4;
+  	cursor: pointer;
+  	background-color: grey;
+  	font-size: xx-large;
+}
+
+input[type="radio"]
+{
+	display: none;
+}
+
+label[for="next"]
+{
+	right: 0px;
+	padding-right: 5px; 
+	border-radius: 60px 0px 0px 60px;
+}
+label[for="prev"]
+{
+	left: 0px;
+	padding-left: 0px;
+	border-radius: 0px 60px 60px 0px;
+}
+
+
+
+
+
+/************************
+****  $INTRODUCTION *****
+************************/
+
+.infopage
+{
+	margin: auto;
+	text-align: center;
+	width: 30%;
+}
+.infopage p
+{
+	font-size: medium;
+}
+.deco
+{
+	display: flex;
+	justify-content: center;
+}
+.line
+{
+	margin: 8px;
+	height: 1px;
+	width: 3cm;
+	background-color: #EDEDED;
+}
+.sphere
+{
+	background-color: #4D9DC8;
+	width: 12px;
+	height: 12px;
+	border-radius: 50px;
+	border: 2px solid white;
+}
+
+
+
+
+/************************
+******  $SERVICE ********
+************************/
+
+.elements
+{
+	display: flex;
+	justify-content: space-around;
+	margin: 50px;
+}
+.service
+{
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+.listservice
+{
+	position: relative;
+	display: flex;
+	margin-bottom: 50px;
+}
+.content p
+{
+	margin: 0px;
+}
+.content
+{
+	margin-left: 70px;
+}
+#pc
+{
+	width: 100%;
+}
+.icone
+{
+	position: absolute;
+	top: 20%;
+	padding: 2px;
+}
+.ballicone
+{
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 40px;
+    background-color: #4D9DC8;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    border:white 3px solid;
+}
+i
+{
+	position: absolute;
+	color: #4D9DC8;
+	border: solid #EDEDED 1px;
+	border-radius: 50px;
+	padding: 15px;
+}
+
+
+
+
+/************************
+*****  $PROJETS  *********
+************************/
+
+#projets
+{
+	background-color: #F2F2F2;
+	text-align: center;
+	padding-top: 5px;
+}
+
+input[id="all"]:checked ~ label[for="all"]
+{
+	background-color: #4D9DC8;
+	border-bottom: solid #3782AC 5px;
+	color: white;
+}
+input[id="all"]:checked ~ div[class="projetslist"] .all
+{
+	display: block;
+}
+
+input[id="creative"]:checked ~ label[for="creative"]
+{
+	background-color: #4D9DC8;
+	border-bottom: solid #3782AC 5px; 
+	color: white;
+}
+input[id="creative"]:checked ~ div[class="projetslist"] .creative
+{
+	display: block;
+}
+
+input[id="corporate"]:checked ~ label[for="corporate"]
+{
+	background-color: #4D9DC8;
+	border-bottom: solid #3782AC 5px; 
+	color: white;
+}
+input[id="corporate"]:checked ~ div[class="projetslist"] .corporate
+{
+	display: block;
+}
+
+
+input[id="portfolio"]:checked ~ label[for="portfolio"]
+{
+	background-color: #4D9DC8;
+	border-bottom: solid #3782AC 5px; 
+	color: white;
+}
+input[id="portfolio"]:checked ~ div[class="projetslist"] .portfolio
+{
+	display: block;
+}
+
+input[id="all"]:checked ~ #fleche
+{
+	visibility: visible;
+}
+
+input[id="creative"]:checked ~ #fleche
+{
+	left: -262px;
+	visibility: visible;
+}
+input[id="corporate"]:checked ~ #fleche
+{
+	left: -172px;
+	visibility: visible;
+}
+input[id="portfolio"]:checked ~ #fleche
+{
+	left: -77px;
+	visibility: visible;
+}
+
+#fleche
+{
+	visibility: hidden;
+	position: relative;
+	left: -352px;
+	top: 42px;
+	color: #3782AC;
+	border: none;
+}
+
+
+label[class="onglet"]
+{	
+	position: relative;
+	margin-top: 20px;
+	margin-left: -5px;
+	font-size: medium;
+	background-color: #DFDFDF;
+	color: grey;
+	border-radius: 3px;
+}
+
+
+.projetslist
+{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.projetslist img
+{
+	width: 250px;
+	height: 170px;
+	margin: 10px;
+}
+
+
+.imageContainer
+{
+	position: relative;
+	display: none;
+}
+
+.imageContainer:hover .infoProjetHover
+{
+	opacity: 1;
+}
+
+.infoProjetHover
+{	
+	opacity: 0;
+	position: absolute;
+	top: 110px;
+	width: 235px;
+	margin-left: 10px;
+	background-color: rgba(25,25,25, 0.8);
+	color: white !important;
+	font-size: small;
+	padding-left: 15px;
+	text-align: left;
+}
+.infoProjetHover p
+{
+	color: white;
+}
+
+.eye i
+{
+	position: absolute;
+	border: solid 2px white;
+	background-color: #4D9DC8;
+	color: white;
+	right: 30px;
+	top: -25px;
+}
+
+
+
+/************************
+******  $CONTACT  *******
+************************/
+
+#contact
+{
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+#bleu
+{
+	position: relative;
+	opacity: 0.4;
+	pointer-events: none;
+	background-color: #88BAEC;
+	height: 455px;
+	width: 100%;
+}
+form
+{
+	border: #DFDFDF solid 2px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+}
+input
+{
+	border-radius: 3px;
+	border: solid 1px #DFDFDF;
+	padding: 7px;
+	margin: 3px;
+	font-weight: bold;
+}
+
+input[type="submit"]
+{
+	background-color: #4D9DC8;
+	color: white;
+	width: 33%;
+}
+
+textarea
+{
+	border-radius: 3px;
+	border: solid 1px #DFDFDF;
+	padding: 7px;
+	margin: 4px;
+	height: 70px;
+	opacity: 0.8;
+	font-weight: bold;
+}
+
+#formdisplay
+{
+	position: absolute;
+	z-index: 3;
+	right: 140px;
+	top: 7%;
+	background-color: rgba(255,255,255, 0.8);
+	width: 400px;
+}
+
+iframe
+{
+	position: absolute;
+	width: 100%;
+	height:450px; 
+}

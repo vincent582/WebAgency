@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>WebAgency</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="webAgency.css">
+	<link rel="stylesheet" type="text/css" href="900px.css">
+	<link rel="stylesheet" type="text/css" href="600px.css">
+	<link rel="stylesheet" type="text/css" href="400px.css">
+	
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	
+</head>
+<body>
+
+	<!-- En-tête du site -->
+	<header>
+		<img id="logo" src="webagency_images/images/logo.png" alt="logo">
+	
+		<!-- menu -->
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#">Accueil</a>
+				</li>
+				<li>
+					<a href="#nosServices">Services</a>
+				</li>
+				<li>
+					<a href="#projets">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	
+	<!-- slider photos-->
+	<div id="baniere">
+	
+		<div id="slider">
+			
+			<input type="radio" name="direction" id="prev">
+			<label for="prev"> &lt; </label>
+			<input type="radio" name="direction" id="next" checked>
+			<label for="next"> &gt; </label>
+
+			<figure>
+				<img src="webagency_images/images/slider/bg1.jpg" alt="photo d'une enfant">
+				<img src="webagency_images/images/slider/bg2.jpg" alt="photo d'une enfant">
+			</figure>
+			
+			<div class="infoSlider">
+				<h1><strong>WEBAGENCY:</strong>L'AGENCE DE TOUS VOS PROJETS !</h1>
+				<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser!</p>
+				<button>Plus d'infos</button>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Nos Services -->
+	<section id="nosServices">
+		<div class="infopage">
+			<h2>NOS SERVICES</h2>
+				<div class="deco">
+					<div class="line"></div>
+						<div class="sphere"></div>
+					<div class="line"></div>
+				</div>
+			<p>Chez WebAgency nous vous offrons toute une gamme de service de qualité professionnelle.</p>
+		</div>
+
+		<div class="elements">
+			
+			<div class="service">
+				<!-- Photo pc -->
+				<img id="pc" src="webagency_images/images/main-feature.png" alt="ordinateur">
+			</div>
+
+			<div class="service">
+			<!-- liste des service -->
+				<ul>
+					<li class="listservice">
+						<div class="icone">
+							<i class="fas fa-chart-line"></i>
+							<div class="ballicone"></div>
+						</div>
+
+						<div class="content">
+							<h3>UX design</h3>
+							<p>Le UX design consiste à penser et à concevoir un site web de manière à ce que l’expérience utilisateur soit la meilleure possible. </p>
+						</div>
+					</li>
+
+					<li class="listservice">
+						<div class="icone">
+							<i class="fas fa-cubes"></i>
+							<div class="ballicone"></div>
+						</div>
+
+						<div class="content">
+							<h3>UI design</h3>
+							<p>L’interface utilisateur (UI pour User Interface) est un élément important pour un site performant. La conception d’une bonne interface utilisateur est codifiée et est essentiellement liée au zoning des pages ainsi qu’à leur apparence graphique.</p>
+						</div>
+					</li>
+
+					<li class="listservice">
+						<div class="icone">
+							<i class="fas fa-chart-pie"></i>
+							<div class="ballicone"></div>
+						</div>
+
+						<div class="content">
+							<h3>SEO</h3>
+							<p>le terme SEO est un acronyme anglais signifiant "Search Engine Optimization". Cela se traduit en français par "Optimisation pour les moteurs de recherche" et c'est tout simplement l'équivalent anglais pour le mot référencement.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Nos Projets -->
+	<section id="projets">
+	
+		<div class="infopage">
+			<h2>NOS PROJETS</h2>
+				<div class="deco">
+					<div class="line"></div>
+					<div class="sphere"></div>
+					<div class="line"></div>
+				</div>
+			<p>Voyez par vous-même...<br>Les projets que nous avons réalisé pour nos clients:</p>
+		</div>
+
+
+		<!-- menu liste des projets -->
+		<input type="radio" name="onglet" id="all" checked>
+		<label class="onglet" for="all">All works</label>
+		<input type="radio" name="onglet" id="creative">
+		<label class="onglet" for="creative">Creative</label>
+		<input type="radio" name="onglet" id="corporate">
+		<label class="onglet" for="corporate">Corporate</label>
+		<input type="radio" name="onglet" id="portfolio">
+		<label class="onglet" for="portfolio">Portfolio</label>
+		<i id="fleche" class="fas fa-caret-down fa-3x"></i>
+
+		<div class="projetslist">
+			<!-- photo des projets -->
+			<div class="imageContainer all creative">
+				<img src="webagency_images/images/portfolio/01.jpg" alt="image de projet 1">
+				<div class="infoProjetHover">
+					<h4>MyLunnette.com</h4>
+					<p>Problème de vue ?</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>
+			</div>
+	
+			<div class="imageContainer all creative">
+				<img src="webagency_images/images/portfolio/02.jpg" alt="image de projet 2">
+				<div class="infoProjetHover">
+					<h4>GraphiquaDesign.com</h4>
+					<p>Créateur de maquette.</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>
+			</div>		
+
+			<div class="imageContainer all corporate">
+				<img src="webagency_images/images/portfolio/03.jpg" alt="image de projet 3">
+				<div class="infoProjetHover">
+					<h4>Pompadour.com</h4>
+					<p>Les chaussures de qualités.</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>
+			</div>		
+
+			<div class="imageContainer all portfolio">
+				<img src="webagency_images/images/portfolio/04.jpg" alt="image de projet 4">
+				<div class="infoProjetHover">
+					<h4>Strark.com</h4>
+					<p>L'ingénierie à l'état pur...</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>	
+			</div>
+
+			<div class="imageContainer all creative">
+				<img src="webagency_images/images/portfolio/05.jpg" alt="image de projet 5">
+				<div class="infoProjetHover">
+					<h4>Marqui.com</h4>
+					<p>Toujours disponible en TakeOut.</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>	
+			</div>
+
+			<div class="imageContainer all portfolio">
+				<img src="webagency_images/images/portfolio/06.jpg" alt="image de projet 6">
+				<div class="infoProjetHover">
+					<h4>TravelStars.com</h4>
+					<p>Découvrez le Monde!</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>	
+			</div>
+
+			<div class="imageContainer all corporate">
+				<img src="webagency_images/images/portfolio/07.jpg" alt="image de projet 7">
+				<div class="infoProjetHover">
+					<h4>NewBrand.com</h4>
+					<p>The Best Brand ;)</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>	
+			</div>
+
+			<div class="imageContainer all corporate">
+				<img src="webagency_images/images/portfolio/08.jpg" alt="image de projet 8">
+				<div class="infoProjetHover">
+					<h4>MontCanlb.com</h4>
+					<p>Fourniture pour le bureau.</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>	
+			</div>
+
+			<div class="imageContainer all corporate">
+				<img src="webagency_images/images/portfolio/full.jpg" alt="image de projet burger">
+				<div class="infoProjetHover">
+					<h4>McFood.com</h4>
+					<p>Les meilleurs burgers</p>
+					<p class="eye"><i class="far fa-eye"></i></p>
+				</div>	
+			</div>
+			
+		</div>
+	</section>
+
+
+	<section id="contact">
+
+		<!-- carte google maps avec formulaire de contact  -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246026588!2d2.3476422795150773!3d48.873055307730446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris%2C+France!5e0!3m2!1sfr!2sjp!4v1537013095660"></iframe>
+
+		<div id="bleu"></div>
+
+		<div id="formdisplay">
+			<form>
+				<h3>Contact Info</h3>
+				<p><em>WebAgency SAS</em><br>25 Rue d'Hauteville 75010 Paris<br>Tel : 01 02 03 04 05</p>
+
+				<input type="text" name="name" placeholder="Name">
+				<input type="email" name="email" placeholder="Email">
+				<input type="text" name="subject" placeholder="Subject">
+				<textarea name="message" placeholder="Message"></textarea>
+				<input type="submit" name="submit" value="Send Message">
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>

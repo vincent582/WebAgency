@@ -1,0 +1,40 @@
+@media all and (max-width: 900px)
+{
+	/* ecran inferieur a 900px */
+
+	#slider figure img
+	{
+		height: 280px;
+	}
+
+	.infoSlider 
+	{
+		top: 150px;
+		width: 80%;
+	}
+	
+	.infopage
+	{
+		width: 70%;
+	}
+	
+	.elements
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 20px 30px;
+	}
+	
+	.service
+	{
+		width: 100%;
+	}
+	
+	#pc
+	{
+		padding-left: 100px;
+		width: 70%;
+	}
+
+}
